@@ -2,6 +2,8 @@
 #include <math.h>
 
 void romanNumeralConversion(int k){
+    int [] = {1000, 500, 100, 50, 10, 5, 1};
+    char [] = {"M","D","C","L","X","V","I"};
     while (k > 0) {
         if(k >= 1000){
             printf("M");
@@ -46,25 +48,4 @@ int main(){
         romanNumeralConversion(k);
     }
     return 0;
-}
-
-void romanNumeralExact(int k) {
-    if (k == 5) {
-        printf("V");
-    }
-    if (k == 10) {
-        printf("X");
-    }
-    if (k == 50) {
-        printf("L");
-    }
-    if (k == 100) {
-        printf("C");
-    }
-    if (k == 500) {
-        printf("D");
-    }
-    if (k == 1000) {
-        printf("M");
-    }
 }
