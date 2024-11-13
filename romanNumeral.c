@@ -3,6 +3,10 @@
 
 void romanNumeralConversion(int k){
     while (k > 0) {
+        if(k / 1000 == 1){
+            printf("M");
+            k -= 1000;
+        }
         printf("I");
         k -= 1;
     }
@@ -16,7 +20,7 @@ int main(){
     return 0;
 }
 
-void romanNumeralExact() {
+void romanNumeralExact(int k) {
     if (k == 5) {
         printf("V");
     }
